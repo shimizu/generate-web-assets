@@ -1,4 +1,4 @@
-# @shimizu/generate-web-assets
+# generate-web-assets
 
 Webサイト用の画像アセット（hero / banner / icon / ogp）を Google Gemini API で生成するスキルを、Claude Code / Codex / Gemini CLI に導入する CLI インストーラ。
 
@@ -16,7 +16,7 @@ Webサイト用の画像アセット（hero / banner / icon / ogp）を Google G
 プロジェクトのルートディレクトリで以下を実行する。
 
 ```bash
-npx @shimizu/generate-web-assets init
+npx generate-web-assets init
 ```
 
 実行すると、カレントディレクトリに以下の構造でスキルファイルが配置される。
@@ -79,7 +79,7 @@ npx tsx .agent/skills/generate-web-assets/generate-asset.ts \
 ## コマンド
 
 ```bash
-npx @shimizu/generate-web-assets <command> [options]
+npx generate-web-assets <command> [options]
 ```
 
 | コマンド | 説明 |

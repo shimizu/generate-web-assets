@@ -1,6 +1,6 @@
-# npm 公開タスク — @shimizu/generate-web-assets
+# npm 公開タスク — generate-web-assets
 
-`@shimizu/generate-web-assets` を npm に初回公開するための手順書。上から順に実行する。
+`generate-web-assets` を npm に初回公開するための手順書。上から順に実行する。
 
 ## 前提
 
@@ -167,7 +167,7 @@ ls -la .gemini/skills/generate-web-assets/
 generate-web-assets doctor
 
 # 後片付け
-npm uninstall -g @shimizu/generate-web-assets
+npm uninstall -g generate-web-assets
 cd - && rm -rf /tmp/test-install
 rm shimizu-generate-web-assets-0.1.0.tgz
 ```
@@ -212,7 +212,7 @@ npm publish --dry-run --access public
 
 出力されるファイル一覧・合計サイズ・依存関係を最終確認する。
 
-**完了条件**: エラーなく `+ @shimizu/generate-web-assets@0.1.0` が表示される。
+**完了条件**: エラーなく `+ generate-web-assets@0.1.0` が表示される。
 
 ---
 
@@ -225,7 +225,7 @@ npm publish --access public
 - スコープ付きパッケージはデフォルトで private 扱いになるため `--access public` が**必須**（忘れると 402 エラー）
 - `prepublishOnly` スクリプトにより `npm run build` が自動実行される
 
-**完了条件**: https://www.npmjs.com/package/@shimizu/generate-web-assets にページが表示される。
+**完了条件**: https://www.npmjs.com/package/generate-web-assets にページが表示される。
 
 ---
 
@@ -235,7 +235,7 @@ npm publish --access public
 
 ```bash
 mkdir -p /tmp/post-publish-test && cd /tmp/post-publish-test
-npx @shimizu/generate-web-assets@latest init
+npx generate-web-assets@latest init
 
 # ファイル構造確認
 find .agent .claude .codex .gemini -type f

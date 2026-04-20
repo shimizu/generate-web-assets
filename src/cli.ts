@@ -113,16 +113,16 @@ async function cmdDoctor(args: string[]) {
     console.log(`⚠️  ${missing.length} 個のファイルが不足しています:`);
     for (const f of missing) console.log(`     - ${f}`);
     console.log();
-    console.log(`   npx @shimizu/generate-web-assets init --force で再インストールしてください`);
+    console.log(`   npx generate-web-assets init --force で再インストールしてください`);
     process.exitCode = 1;
   }
 }
 
 function printHelp() {
-  console.log(`@shimizu/generate-web-assets
+  console.log(`generate-web-assets
 
 使用方法:
-  npx @shimizu/generate-web-assets <command> [options]
+  npx generate-web-assets <command> [options]
 
 コマンド:
   init       スキルファイルをターゲットディレクトリに配置する

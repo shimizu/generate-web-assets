@@ -101,15 +101,15 @@ async function cmdDoctor(args) {
     console.log(`\u26A0\uFE0F  ${missing.length} \u500B\u306E\u30D5\u30A1\u30A4\u30EB\u304C\u4E0D\u8DB3\u3057\u3066\u3044\u307E\u3059:`);
     for (const f of missing) console.log(`     - ${f}`);
     console.log();
-    console.log(`   npx @shimizu/generate-web-assets init --force \u3067\u518D\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB\u3057\u3066\u304F\u3060\u3055\u3044`);
+    console.log(`   npx generate-web-assets init --force \u3067\u518D\u30A4\u30F3\u30B9\u30C8\u30FC\u30EB\u3057\u3066\u304F\u3060\u3055\u3044`);
     process.exitCode = 1;
   }
 }
 function printHelp() {
-  console.log(`@shimizu/generate-web-assets
+  console.log(`generate-web-assets
 
 \u4F7F\u7528\u65B9\u6CD5:
-  npx @shimizu/generate-web-assets <command> [options]
+  npx generate-web-assets <command> [options]
 
 \u30B3\u30DE\u30F3\u30C9:
   init       \u30B9\u30AD\u30EB\u30D5\u30A1\u30A4\u30EB\u3092\u30BF\u30FC\u30B2\u30C3\u30C8\u30C7\u30A3\u30EC\u30AF\u30C8\u30EA\u306B\u914D\u7F6E\u3059\u308B
