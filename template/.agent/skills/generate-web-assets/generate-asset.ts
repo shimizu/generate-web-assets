@@ -129,7 +129,11 @@ function buildPrompt(args: CLIArgs): string {
 // ── 画像生成 ────────────────────────────────────────
 
 async function generateImage(prompt: string, aspectRatio: string): Promise<Buffer> {
-  const ai = new GoogleGenAI({});
+  const apiKey = process.env.GEMINI_NANOBANANA_API_KEY;
+  if (!apiKey) {
+    throw new Error("環境変数 GEMINI_NANOBANANA_API_KEY が設定されていません");
+  }
+  const ai = new GoogleGenAI({ apiKey });
   const response = await ai.models.generateContent({
     model: "gemini-2.5-flash-image",
     contents: prompt,

@@ -35,5 +35,5 @@ npx tsx generate-asset.ts --type <type> --name <name> --prompt "<説明>" [optio
 
 ### 前提条件
 
-- `GOOGLE_API_KEY` 環境変数が設定されていること
+- `GEMINI_NANOBANANA_API_KEY` 環境変数が設定されていること
 - `@google/genai` パッケージがインストール済みであること (`npm install`)

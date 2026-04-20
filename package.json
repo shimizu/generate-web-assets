@@ -1,6 +1,6 @@
 {
   "name": "generate-web-assets",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Webサイト用アセット生成スキルをエージェント環境（Claude Code / Codex / Gemini CLI）に導入するCLIインストーラ",
   "type": "module",
   "repository": {

@@ -240,9 +240,9 @@ npx generate-web-assets@latest init
 # ファイル構造確認
 find .agent .claude .codex .gemini -type f
 
-# 実際に画像生成まで動作するか（GOOGLE_API_KEY が必要）
+# 実際に画像生成まで動作するか（GEMINI_NANOBANANA_API_KEY が必要）
 npm install --save-dev @google/genai tsx
-export GOOGLE_API_KEY=<your-key>
+export GEMINI_NANOBANANA_API_KEY=<your-key>
 npx tsx .agent/skills/generate-web-assets/generate-asset.ts \
   --type hero --name test-hero --prompt "青空と山" --style photo
 

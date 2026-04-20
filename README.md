@@ -5,7 +5,7 @@ Webサイト用の画像アセット（hero / banner / icon / ogp）を Google G
 ## 前提条件
 
 - Node.js 18 以上
-- Google Gemini API キー（環境変数 `GOOGLE_API_KEY`）
+- Google Gemini API キー（環境変数 `GEMINI_NANOBANANA_API_KEY`）
 - スキルを利用するエージェント CLI のいずれか
   - [Claude Code](https://docs.claude.com/claude-code)
   - OpenAI Codex CLI
@@ -37,7 +37,7 @@ npx generate-web-assets init
 
 ```bash
 npm install --save-dev @google/genai tsx
-export GOOGLE_API_KEY=your-api-key
+export GEMINI_NANOBANANA_API_KEY=your-api-key
 ```
 
 ## 使い方

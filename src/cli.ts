@@ -79,12 +79,12 @@ async function cmdInit(args: string[]) {
   console.log();
   console.log(`次のステップ:`);
   console.log(`  1. npm install --save-dev @google/genai tsx を実行`);
-  console.log(`  2. 環境変数 GOOGLE_API_KEY を設定`);
+  console.log(`  2. 環境変数 GEMINI_NANOBANANA_API_KEY を設定`);
   console.log(`  3. Claude Code などで /generate-web-assets を呼び出す`);
 
-  if (!process.env.GOOGLE_API_KEY) {
+  if (!process.env.GEMINI_NANOBANANA_API_KEY) {
     console.log();
-    console.warn(`⚠️  GOOGLE_API_KEY が未設定です`);
+    console.warn(`⚠️  GEMINI_NANOBANANA_API_KEY が未設定です`);
   }
 }
 
