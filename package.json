@@ -1,5 +1,5 @@
 {
-  "name": "@shimizu/generate-web-assets",
+  "name": "generate-web-assets",
   "version": "0.1.0",
   "description": "Webサイト用アセット生成スキルをエージェント環境（Claude Code / Codex / Gemini CLI）に導入するCLIインストーラ",
   "type": "module",

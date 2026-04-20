@@ -1,0 +1,5 @@
+# 何も ignore しない（include を明示するため）
+!template/.agent/
+!template/.claude/
+!template/.codex/
+!template/.gemini/
