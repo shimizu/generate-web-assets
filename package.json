@@ -3,6 +3,14 @@
   "version": "0.1.0",
   "description": "Webサイト用アセット生成スキルをエージェント環境（Claude Code / Codex / Gemini CLI）に導入するCLIインストーラ",
   "type": "module",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shimizu/generate-web-assets.git"
+  },
+  "homepage": "https://github.com/shimizu/generate-web-assets#readme",
+  "bugs": {
+    "url": "https://github.com/shimizu/generate-web-assets/issues"
+  },
   "bin": {
     "generate-web-assets": "dist/cli.js"
   },
