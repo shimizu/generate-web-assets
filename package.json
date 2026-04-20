@@ -1,0 +1,40 @@
+{
+  "name": "@shimizu/generate-web-assets",
+  "version": "0.1.0",
+  "description": "Webサイト用アセット生成スキルをエージェント環境（Claude Code / Codex / Gemini CLI）に導入するCLIインストーラ",
+  "type": "module",
+  "bin": {
+    "generate-web-assets": "dist/cli.js"
+  },
+  "files": [
+    "dist/",
+    "template/",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "tsup",
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "claude-code",
+    "skill",
+    "gemini",
+    "image-generation",
+    "cli"
+  ],
+  "author": "shimizu",
+  "license": "MIT",
+  "devDependencies": {
+    "@google/genai": "^1.49.0",
+    "@types/node": "^20.0.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.0.0"
+  }
+}
